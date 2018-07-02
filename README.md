@@ -20,8 +20,19 @@ The stakes for choosing and directing NBA teams are high.
 
 # Process
 
-After every NBA game, a table of game stats for each time is posted on ESPN.com.
+After every NBA game, a table of game stats is posted on ESPN.com, like this one for Game 4 of the 2018 NBA Finals (where the Warriors beat the Cavs to win the 2018 NBA championship).
 
+![Game 4 Team Stats table](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_table.png)
+
+I used the requests and BeautifulSoup libraries to scrape the team stats table for every game (regular and postseason) since the 2008-2009 season. I organized this data into Pandas DataFrames and saved them as CSV files. 
+
+In order to access the team stats table, I needed to acquire the url leading to it. For this, I recognized that to each game is attached a unique 9-digit Matchup ID. With this Matchup ID, the team stats table for a game is simply located at http://www.espn.com/nba/matchup?gameId={MatchupID}. 
+
+Thus, the task of scraping team stats table boiled down to gathering the MatchupID's. For this, I realized that I could scrape this from the Team Schedule pages. Below is an example of this page for the Warriors 2017-2018 regular season.
+
+![Game Schedule](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_schedule.png)
+
+The "Result" for each game has a link that looks similar to "http://www.espn.com/nba/recap/_/id/400974438", where the trailing number is the MatchupID for the game. 
 
 
 # Contents
