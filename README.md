@@ -34,7 +34,7 @@ to collect stats from over 12,900 games since the 2009-2010 season. We stored th
 
 ![Team Screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_screenshot.png)
 
-We then do the same for player statistics, scraping from tables that look like 
+We then do the same for player statistics, scraping from box scores that look like 
 
 
 
