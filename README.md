@@ -2,12 +2,12 @@
 
 This project aims to determine the primary factors towards winning games in the National Basketball Association (NBA) today by analyzing player and team statistics over the past 10 seasons. 
 
-I use Python to develop our project from end-to-end: I webscrape, organize, clean, visualize, and analyze data.
-I comment code and lead the reader through my thinking throughout.
+I use Python to develop the project from end-to-end: I webscrape, organize, clean, visualize, and analyze data.
+I comment code and lead the reader through my thinking.
 
 # Motivation
 
-By identifying the factors most related to winning, NBA teams can emphasize certain play styles and target players to acquire. With each team allowed to only have 15 players on the roster at once (technically two more players can be kept in the D-League), it is vital that each player is carefully chosen and contributes.
+By identifying the factors most related to winning, NBA teams can emphasize certain play styles and target players to acquire. With each team allowed to only have 15 players on the roster at once (technically two more players can be kept in the D-League), it is vital that each player is carefully chosen to contribute.
 
 
 Each NBA team could be viewed as a billion dollar business. 
@@ -20,24 +20,24 @@ The stakes for choosing and directing NBA teams are high.
 
 # Features
 
-These programs lead one through how to do a webscraping data analysis project from the beginning. It begins by scraping data from a website and cleaning this data using (primarily) the Python libraries Pandas, requests, BeautifulSoup, and SQLite. It then brings up questions one can ask of this data, using machine learning and visualization methods via scikit-learn and Matplotlib.
+These programs lead one through how to do a webscraping data analysis project from the beginning. It begins by scraping data from a website and cleaning this data using (primarily) the Python libraries Pandas, requests, BeautifulSoup, and SQLite. It then brings up questions one can ask of this data, then providing answers through machine learning and visualization methods via scikit-learn and Matplotlib.
 
 
 # Overview
 
-I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games). I then show that the Hollinger Game Score, a game statistic developed by NBA Data Analyst/current Vice President of Basketball Operations for the Memphis Grizzlies John Hollinger, classified winning based on team statistics with 94% accuracy during last season. I then do some machine learning classification of winning.
+I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games). I then show that the Hollinger Game Score, a game statistic developed by NBA Data Analyst/current Vice President of Basketball Operations for the Memphis Grizzlies John Hollinger, classified winning based on team statistics with 94% accuracy last season. I then do some machine learning classification of winning.
 
 I begin by collecting team statistics from tables (one for each NBA game) that look like
 
 ![Game 4 Team Stats table](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_table.png)
 
-using team schedules (regular season for each team and postseason for teams that made playoffs) that look like
+using team schedules (regular season for each team and year, and postseason for teams that made playoffs) that look like
 
 ![Game Schedule](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_schedule.png)
 
 to collect stats from over 12,900 games since the 2009-2010 season. We stored this in a CSV file with over 25,000 records, for which the first few rows begin as 
 
-![Team Screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_screenshot.png)
+![Team Screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team%20stats%20table%20screen.png)
 
 We then do the same for player statistics, scraping from box scores that look like 
 
