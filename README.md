@@ -30,9 +30,11 @@ using team schedules (regular season for each team and postseason for teams that
 
 ![Game Schedule](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_schedule.png)
 
-to collect stats from over 12,000 games since the 2009-2010 season. We stored this in a CSV file, for which the first few rows look like 
+to collect stats from over 12,900 games since the 2009-2010 season. We stored this in a CSV file with over 25,000 records, for which the first few rows look like 
 
 ![Team Screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_screenshot.png)
+
+We then do the same for player statistics, scraping from tables that look like 
 
 
 
