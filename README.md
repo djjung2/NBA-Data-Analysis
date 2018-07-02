@@ -18,16 +18,22 @@ Each NBA team could be viewed as a billion dollar business.
 
 The stakes for choosing and directing NBA teams are high.
 
+# Process
+
+After every NBA game, a table of game stats for each time is posted on ESPN.com.
+
+
+
 # Contents
 
 The djjung2/NBA-Data-Analysis repository consists of 4 folders:
 
 - **CollectingPlayerStats**: The two Jupyter files collect and clean player stats from almost every game (over 98%) played since the 2009-2010 seasons. (We ignore some games due to critical errors during webscraping and the lack of a desire to perform ad hac extraction methods.) Included are CSV files that contain the cleaned player data, with name of the form "player\_stats\_{year}\_cleaned.csv".
 
-- **CollectingTeamStats**: These programs progress from scraping the team stats table of a single game to scraping the team stats tables of entire seasons. Included are also the team stats of all games played since the 2009-2010 season, written in the CSV file "all_team_stats_2009_to_2018.csv".
+- **CollectingTeamStats**: The programs here progress from scraping the team stats table of a single game to scraping the team stats tables of entire seasons. Included are also the team stats of all games played since the 2009-2010 season, written in the CSV file "all_team_stats_2009_to_2018.csv".
 
-- **GeneralGameInfo**: These programs collect and organize general game information (one team playing, date of game, game-specific MatchupID, and whether it is a regular season or postseason game) of all games since the 2003-2004 season. Included is a file containing all of this information, named "all_games_04_on.csv".
+- **GeneralGameInfo**: The programs here collect and organize general game information (one team playing, date of game, game-specific MatchupID, and whether it is a regular season or postseason game) of all games since the 2003-2004 season. Included is a file containing all of this information, named "all_games_04_on.csv".
 
-- **TeamStatsAnalysis**: These programs do analysis on team stats. Most interesting is the adaption of the Hollinger Game Score to classify wins, found in "Analyzing importance of game scores-June19.ipynb" and "Classification with team game scores-June20.ipynb". In the latter notebook, we classify winning during the '17-'18 season using this game score, with over 94\% accuracy. In the notebook 
+- **TeamStatsAnalysis**: These programs do analysis on team stats. Most interesting is the adaption of the Hollinger Game Score to classify wins, found in "Analyzing importance of game scores-June19.ipynb" and "Classification with team game scores-June20.ipynb". In the latter notebook, we classify winning during the '17-'18 season using this game score, with over 94\% accuracy. I also compare different machine learning methods for classifying wins in "Classification with 2017 and 2018 team stats- June29.ipynb".
 
 
