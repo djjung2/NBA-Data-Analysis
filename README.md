@@ -18,11 +18,19 @@ Each NBA team could be viewed as a billion dollar business.
 
 The stakes for choosing and directing NBA teams are high.
 
-# Process
+# Overview
 
-After every NBA game, a table of game stats is posted on ESPN.com, like this one for Game 4 of the 2018 NBA Finals (where the Warriors beat the Cavs to win the 2018 NBA championship).
+I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from NBA games.
+
+I collect team statistics from tables (one for each NBA game) that look like
 
 ![Game 4 Team Stats table](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_table.png)
+
+using team schedules (regular season for each team and postseason for teams that made playoffs) that look like
+
+![Game Schedule](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_schedule.png)
+
+to collect stats from over 12,000 games since the 2009-2010 season.
 
 I used the requests and BeautifulSoup libraries to scrape the team stats table for every game (regular and postseason) since the 2008-2009 season. I organized this data into Pandas DataFrames and saved them as CSV files. 
 
