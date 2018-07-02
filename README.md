@@ -32,7 +32,7 @@ using team schedules (regular season for each team and postseason for teams that
 
 to collect stats from over 12,000 games since the 2009-2010 season. We stored this in a CSV file, for which the first few rows look like 
 
-! [Team Screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_screenshot.png)
+![Team Screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_screenshot.png)
 
 
 
