@@ -20,9 +20,9 @@ The stakes for choosing and directing NBA teams are high.
 
 # Overview
 
-I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games).
+I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games). I then show that the Hollinger Game Score, a game statistic developed by NBA Data Analyst/current Vice President of Basketball Operations for the Memphis Grizzlies John Hollinger, classifies winning based on team statistics with 94% accuracy.
 
-I collect team statistics from tables (one for each NBA game) that look like
+I begin by collecting team statistics from tables (one for each NBA game) that look like
 
 ![Game 4 Team Stats table](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_table.png)
 
@@ -36,27 +36,23 @@ to collect stats from over 12,900 games since the 2009-2010 season. We stored th
 
 We then do the same for player statistics, scraping from box scores that look like 
 
+![Box score screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/box%20score%20screenshot.png)
+
+You may notice the url is followed by a 9-digit number, which is the unique Matchup ID assigned to the game, which I scraped earlier from the team schedules pages. 
+
+This resulted in a file of player statistics since the 2004-2005 season of around 480,000 records, of which the first few rows looks like
+
+![Player file](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/Player%20stats%20table.png)
+
+I then do data analysis, classifying wins by team statistics. The most interesting statistic I found was developed by John Hollinger, an NBA data analyst. He designed the score to measure a player's performance in a game, and it is given by the formula
+
+PTS + 0.4 * FG - 0.7 * FGA - 0.4*(FTA - FT) + 0.7 * ORB + 0.3 * DRB + STL + 0.7 * AST + 0.7 * BLK - 0.4 * PF - TOV,
+
+where abbreviations are mostly intuitive for NBA fans and can be found on Hollinger's [Wikipedia page](https://en.wikipedia.org/wiki/John_Hollinger). This statistic classified wins with great accuracy from the 2017-2018 (over 94%) and should be analyzed further.
+
+I also compare several machine learning methods for classifying wins based on team stats over the past two seasons.
 
 
-
-
-
-
-
-
-
-
-
-
-I used the requests and BeautifulSoup libraries to scrape the team stats table for every game (regular and postseason) since the 2008-2009 season. I organized this data into Pandas DataFrames and saved them as CSV files. 
-
-In order to access the team stats table, I needed to acquire the url leading to it. For this, I recognized that to each game is attached a unique 9-digit Matchup ID. With this Matchup ID, the team stats table for a game is simply located at http://www.espn.com/nba/matchup?gameId={MatchupID}. 
-
-Thus, the task of scraping team stats table boiled down to gathering the MatchupID's. For this, I realized that I could scrape this from the Team Schedule pages. Below is an example of this page for the Warriors 2017-2018 regular season.
-
-![Game Schedule](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_schedule.png)
-
-The "Result" for each game has a link that looks similar to "http://www.espn.com/nba/recap/_/id/400974438", where the trailing number is the MatchupID for the game. 
 
 
 # Contents
@@ -68,6 +64,8 @@ The djjung2/NBA-Data-Analysis repository consists of 4 folders:
 - **CollectingTeamStats**: The programs here progress from scraping the team stats table of a single game to scraping the team stats tables of entire seasons. Included are also the team stats of all games played since the 2009-2010 season, written in the CSV file "all_team_stats_2009_to_2018.csv".
 
 - **GeneralGameInfo**: The programs here collect and organize general game information (one team playing, date of game, game-specific MatchupID, and whether it is a regular season or postseason game) of all games since the 2003-2004 season. Included is a file containing all of this information, named "all_games_04_on.csv".
+
+- **Images**: This contains the images used in this README.
 
 - **TeamStatsAnalysis**: These programs do analysis on team stats. Most interesting is the adaption of the Hollinger Game Score to classify wins, found in "Analyzing importance of game scores-June19.ipynb" and "Classification with team game scores-June20.ipynb". In the latter notebook, we classify winning during the '17-'18 season using this game score, with over 94\% accuracy. I also compare different machine learning methods for classifying wins in "Classification with 2017 and 2018 team stats- June29.ipynb".
 
