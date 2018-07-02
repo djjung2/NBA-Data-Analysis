@@ -18,6 +18,11 @@ Each NBA team could be viewed as a billion dollar business.
 
 The stakes for choosing and directing NBA teams are high.
 
+# Features
+
+These programs lead one through how to do a webscraping data analysis project from the beginning. It begins by scraping data from a website and cleaning this data using (primarily) the Python libraries Pandas, requests, BeautifulSoup, and SQLite. It then brings up questions one can ask of this data, using machine learning and visualization methods via scikit-learn and Matplotlib.
+
+
 # Overview
 
 I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games). I then show that the Hollinger Game Score, a game statistic developed by NBA Data Analyst/current Vice President of Basketball Operations for the Memphis Grizzlies John Hollinger, classified winning based on team statistics with 94% accuracy during last season. I then do some machine learning classification of winning.
@@ -30,7 +35,7 @@ using team schedules (regular season for each team and postseason for teams that
 
 ![Game Schedule](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_schedule.png)
 
-to collect stats from over 12,900 games since the 2009-2010 season. We stored this in a CSV file with over 25,000 records, for which the first few rows look like 
+to collect stats from over 12,900 games since the 2009-2010 season. We stored this in a CSV file with over 25,000 records, for which the first few rows begin as 
 
 ![Team Screenshot](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/team_stats_screenshot.png)
 
@@ -40,7 +45,7 @@ We then do the same for player statistics, scraping from box scores that look li
 
 You may notice the url is followed by a 9-digit number, which is the unique Matchup ID assigned to the game, which I scraped earlier from the team schedules pages. 
 
-This resulted in a file of player statistics since the 2004-2005 season of around 480,000 records, of which the first few rows looks like
+This resulted in a file of player statistics since the 2004-2005 season of around 480,000 records, of which the first few rows began as
 
 ![Player file](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Images/Player%20stats%20table.png)
 
@@ -53,11 +58,9 @@ where abbreviations are mostly intuitive for NBA fans and can be found on Hollin
 I also compare several machine learning methods for classifying wins based on team stats over the past two seasons.
 
 
-
-
 # Contents
 
-The djjung2/NBA-Data-Analysis repository consists of 4 folders:
+The djjung2/NBA-Data-Analysis repository consists of 5 folders:
 
 - **CollectingPlayerStats**: The two Jupyter files collect and clean player stats from almost every game (over 98%) played since the 2009-2010 seasons. (We ignore some games due to critical errors during webscraping and the lack of a desire to perform ad hac extraction methods.) Included are CSV files that contain the cleaned player data, with name of the form "player\_stats\_{year}\_cleaned.csv".
 
@@ -68,5 +71,15 @@ The djjung2/NBA-Data-Analysis repository consists of 4 folders:
 - **Images**: This contains the images used in this README.
 
 - **TeamStatsAnalysis**: These programs do analysis on team stats. Most interesting is the adaption of the Hollinger Game Score to classify wins, found in "Analyzing importance of game scores-June19.ipynb" and "Classification with team game scores-June20.ipynb". In the latter notebook, we classify winning during the '17-'18 season using this game score, with over 94\% accuracy. I also compare different machine learning methods for classifying wins in "Classification with 2017 and 2018 team stats- June29.ipynb".
+
+
+# Future projects
+
+A person interested in this project could modify my programs to analyze another sport, such as NFL. I think it would be really interesting to develop a player statistic for the performance of NFL players. This has already been developed for quarterbacks (passer rating and QB rating), but it would be interesting to standardize this across all positions. How does one measure the value of an offensive tackle? Of a punter? How should their performances compare? The NFL is far less developed in terms of well-known statistics that identify the value of players. 
+
+
+# Credits
+
+By using data from ESPN.com, I agree to Disney's term of service, especially not making money off of this project. Thank you ESPN for compiling and making this data available!
 
 
