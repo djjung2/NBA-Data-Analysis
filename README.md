@@ -20,7 +20,7 @@ The stakes for choosing and directing NBA teams are high.
 
 # Overview
 
-I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from NBA games.
+I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games).
 
 I collect team statistics from tables (one for each NBA game) that look like
 
