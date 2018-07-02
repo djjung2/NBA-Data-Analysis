@@ -20,7 +20,7 @@ The stakes for choosing and directing NBA teams are high.
 
 # Overview
 
-I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games). I then show that the Hollinger Game Score, a game statistic developed by NBA Data Analyst/current Vice President of Basketball Operations for the Memphis Grizzlies John Hollinger, classifies winning based on team statistics with 94% accuracy.
+I start by using the Python libraries requests, BeautifulSoup, Pandas, and SQLite to webscrape from ESPN.com, organize, and clean team and player statistics from nearly all NBA games over the past 10 seasons (nearly 13,000 games). I then show that the Hollinger Game Score, a game statistic developed by NBA Data Analyst/current Vice President of Basketball Operations for the Memphis Grizzlies John Hollinger, classified winning based on team statistics with 94% accuracy during last season. I then do some machine learning classification of winning.
 
 I begin by collecting team statistics from tables (one for each NBA game) that look like
 
