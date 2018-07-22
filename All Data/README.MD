@@ -1,4 +1,4 @@
-__NBA Game Data from past 15 seasons__
+# NBA Game Data from past 15 seasons
 
 This folder contains approximately 45 MB of player, team, and game statistics from games over the past 15 NBA seasons.
 The one field that links all of these files is that each row includes a "Matchup ID", a 9-digit integer that is unique 
