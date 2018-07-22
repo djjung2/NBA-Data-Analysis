@@ -4,7 +4,7 @@ to each game. This allows us to join several tables to describe specific games.
 
 There are three main types of files in this folder:
 
-1. General game information: These are located in the files "all_games_04_on.csv" and "all_regular_season_games_since_ohfour.csv". 
+1. General game information: These are located in "all_games_04_on.csv" and "all_regular_season_games_since_ohfour.csv". 
 This file contains information on all NBA games since the 2004-2005 season, such as:
   when the game occurred, 
   which season it occurred in, 
