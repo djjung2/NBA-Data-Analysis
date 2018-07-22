@@ -62,9 +62,13 @@ I also compare several machine learning methods for classifying wins based on te
 
 The djjung2/NBA-Data-Analysis repository consists of 5 folders:
 
+- **ALL Data**: Includes all of the NBA data I collected and cleaned from ESPN.com.
+
 - **CollectingPlayerStats**: The two Jupyter files collect and clean player stats from almost every game (over 98%) played since the 2009-2010 seasons. (We ignore some games due to critical errors during webscraping and the lack of a desire to perform ad hac extraction methods.) Included are CSV files that contain the cleaned player data, with name of the form "player\_stats\_{year}\_cleaned.csv".
 
 - **CollectingTeamStats**: The programs here progress from scraping the team stats table of a single game to scraping the team stats tables of entire seasons. Included are also the team stats of all games played since the 2009-2010 season, written in the CSV file "all_team_stats_2009_to_2018.csv".
+
+- **Data Visualizations**: Included are two plots I created using R. One analyzes winning based on team statistics and the other analyzes winning based on player statistics. 
 
 - **GeneralGameInfo**: The programs here collect and organize general game information (one team playing, date of game, game-specific MatchupID, and whether it is a regular season or postseason game) of all games since the 2003-2004 season. Included is a file containing all of this information, named "all_games_04_on.csv".
 
