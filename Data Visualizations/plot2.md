@@ -5,6 +5,7 @@
 # Content
 
 For each of 7 statistics, the time series plot shows in what percentage of games the winning team had more of that statistic each season.
+
 The 7 statistics are Points, Assists, Total rebounds, Three-pointers made, Offensive rebounds, Turnovers, and Personal fouls.
 
 This time series plot is based on the past 10 years of NBA games. The data was collected from ESPN.com.
