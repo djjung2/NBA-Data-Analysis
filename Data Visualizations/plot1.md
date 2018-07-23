@@ -1,4 +1,4 @@
-![plot1](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Data%20Visualizations/data_r_plot1.png)
+![plot1](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Data%20Visualizations/Plot1_July23.png)
 
 # Content
 
