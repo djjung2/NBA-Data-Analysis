@@ -2,7 +2,7 @@
 
 # Content
 
-This chart shows the outcomes of games for teams with a player performing various statistical accomplishments over the past five seasons.
+This chart shows the game outcomes for teams when a player performs various statistical accomplishments over the past five seasons.
 
 For example, the chart shows teams won almost twice as many games as they lost, when a player on the team scored at least 40 points.
 
