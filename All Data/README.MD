@@ -4,6 +4,8 @@ This folder contains approximately 45 MB of player, team, and game statistics fr
 The one field that links all of these files is that each row includes a "Matchup ID", a 9-digit integer that is unique 
 to each game. This allows us to join several tables to describe specific games.
 
+All of this data was scraped from ESPN.com using Python and the BeautifulSoup and requests libraries.
+
 There are three main types of files in this folder:
 
 ## 1. General game information
