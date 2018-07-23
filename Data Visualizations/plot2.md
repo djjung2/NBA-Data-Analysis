@@ -1,5 +1,3 @@
-# Plot 2
-
 ![plot2](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Data%20Visualizations/Plot2_July22.png)
 
 # Content
