@@ -1,10 +1,3 @@
-#I start with the code for plot 1 and then include the code for plot 2.
-
-#I actually Python AND R to make my second plot. 
-#I will include the Python and R code for plot 2.
-
-####################################################
-
 #Plot 1 code:
 
 #Bar plot of number of wins and losses based on player accomplishment occurring in game
