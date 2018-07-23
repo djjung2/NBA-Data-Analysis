@@ -4,14 +4,13 @@
 
 # Content
 
-For each of 7 statistics, the time series plot shows in what percentage of games the winning team had more of that statistic each season.
+For each of 7 statistics, the time series plot shows in what percentage of games the winning team had more of that statistic each season. 
+For example, the winning team scores more points than the losing team in every game. 
+This explains why Points is listed as 100% each season.
 
 The 7 statistics are Points, Assists, Total rebounds, Three-pointers made, Offensive rebounds, Turnovers, and Personal fouls.
 
 This time series plot is based on the past 10 years of NBA games. The data was collected from ESPN.com.
-
-For example, the winning team scores more points than the losing team in every game. 
-This explains why Points is listed as 100% each season.
 
 The stat names in the legend are listed in the same order as they appear for 2008-2009 season.
 
