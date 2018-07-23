@@ -1,5 +1,3 @@
-# First plot
-
 ![plot1](https://github.com/djjung2/NBA-Data-Analysis/blob/master/Data%20Visualizations/data_r_plot1.png)
 
 # Content
