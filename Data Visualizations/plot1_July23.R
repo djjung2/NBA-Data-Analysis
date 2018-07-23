@@ -177,7 +177,7 @@ dodge_bar <- ggplot(data = df_with_win_stat, aes(x=stat_name, y=num_games, fill=
   theme_minimal() +
   scale_fill_manual(values = c("coral1", "royalblue")) +
   labs(title="NBA wins and losses by player statistics, 2014-2018",
-       subtitle="Outcomes of games for teams with a player doing various accomplishments.",
+       subtitle="Game outcomes for teams with a player doing accomplishment.",
        y = "Number of games", caption="Source: ESPN.com") +
   guides(fill=guide_legend(reverse=TRUE, title="")) +
   scale_x_discrete(name="", labels=common_stat_names) + 
